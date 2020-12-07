@@ -1,5 +1,3 @@
-'use strict';
-
 const server = require('./api/server');
 const { PORT } = require('./api/utils/constants');
 

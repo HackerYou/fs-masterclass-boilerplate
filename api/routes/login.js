@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * This route handler is supposed to be a boilerplate for authentication.
  * For our purposes at HackerYou, you should treat this handler as a

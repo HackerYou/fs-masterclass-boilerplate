@@ -1,5 +1,3 @@
-'use strict';
-
 const express = require('express');
 const jwt = require('express-jwt');
 const _ = require('lodash');
@@ -9,13 +7,29 @@ const router = express.Router();
 const { SECRET: secret } = require('../utils/constants');
 
 const books = [
-  { id: 1, name: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling' },
-  { id: 2, name: 'Harry Potter and the Chamber of Secrets', author: 'J.K. Rowling' },
-  { id: 3, name: 'Harry Potter and the Prisoner of Azkaban', author: 'J.K. Rowling' },
-  { id: 4, name: 'Harry Potter and the Goblet of Fire', author: 'J.K. Rowling' },
-  { id: 5, name: 'Harry Potter and the Order of the Phoenix', author: 'J.K. Rowling' },
-  { id: 6, name: 'Harry Potter and the Half-Blood Prince', author: 'J.K. Rowling' },
-  { id: 7, name: 'Harry Potter and the Deathly Hallows', author: 'J.K. Rowling' },
+  { id: 1, name: "Such a Fun Age", author: "Kiley Reid" },
+  { id: 2, name: "George Washington's Teeth", author: "Kiley Reid" },
+  {
+    id: 3,
+    name: "One True Loves",
+    author: "Taylor Jenkins Reid",
+  },
+  { id: 4, name: "Daisy Jones and The Six", author: "Taylor Jenkins Reid" },
+  {
+    id: 5,
+    name: "Let's Learn ES6",
+    author: "Ryan Christiani",
+  },
+  {
+    id: 6,
+    name: "I am Malala",
+    author: "Malala Yousafzai",
+  },
+  {
+    id: 7,
+    name: "Maybe in Another Life",
+    author: "Taylor Jenkins Reid",
+  },
 ];
 
 router.route('/:id')
